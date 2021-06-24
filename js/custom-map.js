@@ -169,7 +169,7 @@ jQuery(document).ready(function ($) {
       stylers: [
         { hue: main_color },
         { visibility: 'on' },
-        // { lightness: brightness_value },
+        { lightness: brightness_value },
         { saturation: saturation_value },
       ],
     },
