@@ -195,7 +195,7 @@ jQuery(document).ready(function ($) {
   );
   //add a custom marker to the map
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(latitude, longitude),
+    position: new google.maps.LatLng(26.910249, 75.752093),
     map: map,
     visible: true,
     icon: marker_url,
