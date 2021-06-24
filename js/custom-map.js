@@ -169,7 +169,7 @@ jQuery(document).ready(function ($) {
       stylers: [
         { hue: main_color },
         { visibility: 'on' },
-        { lightness: brightness_value },
+        // { lightness: brightness_value },
         { saturation: saturation_value },
       ],
     },
@@ -178,7 +178,7 @@ jQuery(document).ready(function ($) {
   //set google map options
 
   var map_options = {
-    center: new google.maps.LatLng(26.910249, 75.752093),
+    center: new google.maps.LatLng(latitude, longitude),
     zoom: map_zoom,
     panControl: false,
     zoomControl: false,
@@ -195,7 +195,7 @@ jQuery(document).ready(function ($) {
   );
   //add a custom marker to the map
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(26.910249, 75.752093),
+    position: new google.maps.LatLng(latitude, longitude),
     map: map,
     visible: true,
     icon: marker_url,
