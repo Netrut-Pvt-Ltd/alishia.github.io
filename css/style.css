@@ -4011,7 +4011,7 @@ a {
   margin-top: 80px;
 }
 .project_details_text li {
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
   list-style:url(../images/project_detail.jpg);
   margin-left: 15px;
 }
