@@ -3439,7 +3439,7 @@ a {
 /* ================================= */
 .error {
   padding-bottom: 140px;
-  padding-top: 170px;
+  padding-top: 30px;
 }
 .error > img {
   margin-bottom: 60px;
@@ -3453,7 +3453,7 @@ a {
 #contact_us_page .contact > div {
   height: 415px !important;
 }
-#contact_form .single-query > input[type="text"] {
+#contact_form .single-query > input {
   border: 1px solid #b7b7b7;
   border-radius: 5px;
   height: 48px;
@@ -3864,7 +3864,7 @@ a {
 }
 /* ------------ News-5 Css  --------- */
 .latest_box_5 {
-  padding:80px 35px;
+  padding:10px 3px;
 }
 .latest_box_5 > h2 {
   padding-bottom: 20px;

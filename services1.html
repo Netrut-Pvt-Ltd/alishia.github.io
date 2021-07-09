@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
-    <title>Alishia / Contact Us</title>
+    <title>aLishia / Services</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="icon" type="image/png" href="images/fav.png" />
 
     <!-- Google fonts -->
     <link
@@ -32,9 +31,13 @@
     <!-- Navbar Css -->
     <link rel="stylesheet" type="text/css" href="css/bootsnav.css" />
 
+    <!-- Navbar Css -->
+    <link rel="stylesheet" type="text/css" href="css/canvas.css" />
+
     <!-- Custom Css -->
     <link rel="stylesheet" type="text/css" href="css/color.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
   <body>
@@ -42,6 +45,7 @@
     <div class="loader">
       <div class="sk-rotating-plane"></div>
     </div>
+    <!-- Loader End -->
     <!-- Header Top Start -->
     <header id="header-top_3">
       <div class="container">
@@ -154,13 +158,16 @@
                 </ul>
               </li>
               <li class="cool-link_3"><a href="about_us.html">About Us</a></li>
-              <li class="dropdown" class="cool-link">
+              <li class="cool-link_3">
                 <a href="services.html">Services</a>
                 <ul class="dropdown-menu">
-                  <li><a href="services.html#es">Executive Search</a></li>
-                  <li><a href="services.html#ha">HR Advisory</a></li>
-                  <li><a href="services.html#as">Automation Services</a></li>
-                  <li><a href="">Interview Saarthi</a></li>
+                  <li><a href="services.html">Financial Planning</a></li>
+                  <li><a href="services.html">Bonds & Commodities</a></li>
+                  <li><a href="services.html">Turnaround Consulting</a></li>
+                  <li><a href="services.html">Trades & Stocks</a></li>
+                  <li><a href="services.html">Investment Trusts</a></li>
+                  <li><a href="services.html">Mutual Funds</a></li>
+                  <li><a href="services.html">Retirement</a></li>
                 </ul>
               </li>
               <li class="cool-link_3">
@@ -181,178 +188,127 @@
     <!-- Navbar End -->
 
     <!-- Page Banner Start -->
-    <section id="page_banner">
+    <section id="page_banner" class="border_b">
       <div class="container">
-        <div class="page-header text-center">
-          <h2>Contact Us</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header">
+              <h2>Services</h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <ol class="breadcrumb">
+              <li><a href="#">You are here:</a></li>
+              <li><a href="#">Home</a></li>
+              <li class="active">Services</li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
     <!-- Page Banner End -->
 
-    <!-- Contact Us Start -->
-
-    <!-- Map Start -->
-    <div id="contact_us_page">
-      <div class="contact">
-        <div id="map"></div>
-      </div>
-    </div>
-    <!-- Map End -->
-
-    <section id="contact_form" class="p-t-60 p-b-100">
+    <!-- Latest News Start -->
+    <section id="news-section" class="p-t-90 p-b-60 news_5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-12 p-b-10">
-            <div class="heading">
-              <div class="heading_border bg_red"></div>
-              <p>Contact Us</p>
-              <h2>WE WANT TO <span class="color_red">HEAR FROM YOU</span></h2>
-            </div>
-            <div class="row p-t-40">
-              <form id="contact-form" onSubmit="return false">
-                <div class="col-md-12"><div id="result"></div></div>
-
-                <div class="col-md-6 col-sm-6">
-                  <div class="single-query">
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      class="keyword-input"
-                      required
-                      name="name"
-                      id="name"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="single-query">
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      class="keyword-input"
-                      required
-                      name="email"
-                      id="email"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="single-query">
-                    <input
-                      type="text"
-                      placeholder="Phone Number"
-                      class="keyword-input"
-                      name="phone"
-                      id="phone"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6">
-                  <div class="single-query">
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      class="keyword-input"
-                      name="subject"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="single-query">
-                    <textarea
-                      placeholder="Massege"
-                      name="message"
-                      id="message"
-                      required="required"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="col-md-12 m-t-20">
-                  <div class="single-query">
-                    <input
-                      type="file"
-                      placeholder="Phone Number"
-                      class="keyword-input"
-                      name="phone"
-                      id="phone"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <button
-                    type="submit"
-                    class="btn-light button-black"
-                    id="btn_submit"
-                    name="btn_submit"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+        <div class="row p-b-100">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="latest_box_image">
+              <img
+                style="border-radius: 5%"
+                src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="image"
+              />
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12 colxs-12">
-            <div class="form_left">
-              <h3 class="text-uppercase"><span>3</span>Social Media</h3>
+          <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="latest_box_5">
+              <!-- <span>APRIL . 16 . 2017</span> -->
+              <h2>Executive Search</h2>
               <p>
-                Benenatis mauris Vestibulum ante ipsum primis in industry,
-                logistics, finance, business.
+                Alishia has been passionate about building global leadership
+                teams that deliver sustainable value for clients across multiple
+                industry segments.
               </p>
-              <div class="social-icons_1 p-t-30">
-                <ul>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i aria-hidden="true" class="fa fa-dribbble"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-linkedin" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-vimeo" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+              <p>
+                Our keen sense of motivation, thorough understanding of the
+                industry, robust and integrated processes and cutting edge
+                technology platforms come together to provide effective
+                executive search solutions for all including top level of
+                executive search.
+              </p>
+              <a href="#">CONTINUE READING</a>
             </div>
+          </div>
+        </div>
 
-            <div class="contact-text m-t-60">
-              <div class="agent-p-contact">
-                <h3 class="color_white">Get In Touch</h3>
-                <div class="agetn-contact-2 p-t-35">
-                  <p><i class="icon-telephone114"></i>+91 88606 07943</p>
-                  <p><i class="icon-icons142"></i>careers@alishia.co.in</p>
+        <div class="row p-b-100">
+          <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="latest_box_5">
+              <!-- <span>APRIL . 16 . 2017</span> -->
+              <h2>HR Advisory</h2>
+              <p>
+                Over the years aLishia has been helping clients in creating a
+                top notch workplace by providing insights on what, when and who
+                would best fit the business entity.
+              </p>
+              <p>
+                The “pandemic age” has accelerated the “automation age,” and the
+                way we work is fundamentally changing. These two forces have
+                collided to form the perfect storm of workplace disruption
+              </p>
+              <a href="#">CONTINUE READING</a>
+            </div>
+          </div>
 
-                  <p><i class="icon-icons20"></i>Mon to Fri - 08:00 to 16:30</p>
-                  <p>
-                    <i class="icon-icons74"></i>453, 4th Floor, JMD Megapolis
-                  </p>
-                  <p>Sohna Road, Gurgaon, Haryana</p>
-                </div>
-              </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="latest_box_image">
+              <img
+                style="border-radius: 5%"
+                src="images/latest_news_page_5_2.jpg"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-b-100">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="latest_box_image">
+              <img
+                style="border-radius: 5%"
+                src="images/latest_news_page_5_5.jpg"
+                alt="image"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="latest_box_5">
+              <!-- <span>APRIL . 16 . 2017</span> -->
+              <h2>Automation Services</h2>
+              <p>
+                Alishia through its partners have helped a lot of clients
+                automate their HR Processes.Service automation is the process of
+                integrating all domain and functionality tools into various
+                automation layers in order to have unified interface for all
+                workflows
+              </p>
+              <p>
+                It is the process of automating events, processes, tasks and
+                business functions
+              </p>
+              <a href="#">CONTINUE READING</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Contact Us End -->
+    <!-- Latest News End -->
 
     <!-- Footer Start -->
     <footer id="footer" class="bg_blue p-t-100">
@@ -477,6 +433,7 @@
       </div>
     </footer>
     <!-- Footer End -->
+
     <!--Required JS -->
     <script src="js/jquery.2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -501,13 +458,11 @@
     <script src="js/bootstrap-number-input.js"></script>
     <script src="js/renge_selectbox-0.2.min.js"></script>
     <script src="js/range-Slider.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U&amp;libraries=places"></script>
-    <script src="js/gmaps.js"></script>
     <script src="js/jquery.counterup.js"></script>
     <script src="js/zelect.js"></script>
+    <script src="js/canvasjs.min.js"></script>
     <!-- Progress  -->
     <script src="js/progressbar.js"></script>
-    <script src="js/contact.js"></script>
     <script src="js/copious_custom.js"></script>
   </body>
 </html>
