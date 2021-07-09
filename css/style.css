@@ -3438,7 +3438,7 @@ a {
 /* ------ 404 Error Page Css  ------ */
 /* ================================= */
 .error {
-  padding-bottom: 140px;
+  /* padding-bottom: 140px; */
   padding-top: 30px;
 }
 .error > img {
