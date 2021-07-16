@@ -665,7 +665,7 @@ a:active, a:hover {
   border-left: none !important;
 }
 #header-top_3 .collapse.navbar-collapse.nav_bor_bot {
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  /* border-bottom: 1px solid rgba(255, 255, 255, .5); */
   margin-bottom: -1px;
 }
 #header-top_3 .wrap-sticky  .navbar-brand {
@@ -3394,10 +3394,10 @@ a {
 	background:url(../images/page_banner.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
-	padding-top:10%;
+	padding-top:4%;
 }
 #page_banner .page-header {
-  margin: 86px 0 52px;
+  margin: 0 0 52px;
   border:none;
  }
 #page_banner .page-header h2{

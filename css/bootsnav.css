@@ -697,6 +697,18 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     nav.navbar.bootsnav.navbar-fixed .logo-scrolled{
         display: block;
     }
+
+    @media (min-width: 1024px){
+    nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display, nav.navbar.bootsnav.navbar-fixed.no-background .logo-display {
+    display: block;
+    margin-top: -50px;
+}
+
+@media (min-width: 1024px){
+nav.navbar.bootsnav.navbar-fixed .logo-scrolled {
+    display: block;
+    width: 80%;
+}
     
     /* Atribute Navigation
     =================================*/    
