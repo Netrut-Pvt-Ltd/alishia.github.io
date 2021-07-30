@@ -1,10 +1,10 @@
 <?php
 date_default_timezone_set('Asia/Kolkata');
 // database Connection
-$host="localhost";
-$user_name="root";
-$password="";
-$database_name="alishia";
+$host="global-db";
+$user_name="alishia.co.in-VrAw6a";
+$password="wRnb6cx8sz9U";
+$database_name="alishia_co_in";
 $db=mysqli_connect($host,$user_name,$password,$database_name);
 
 // Check connection
