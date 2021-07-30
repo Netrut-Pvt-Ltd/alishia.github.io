@@ -171,7 +171,7 @@
               </li>
 
               <li class="dropdown cool-link_3">
-                <a href="career.html">Career</a>
+                <a href="career.php">Career</a>
               </li>
               <li class="cool-link_3">
                 <a href="contact_3.html">Contact Us</a>
@@ -401,7 +401,7 @@
                 <li><a href="our_team.html">Team</a></li>
                 <!-- <li><a href="#">Shop</a></li> -->
                 <li><a href="contact_3.html">Contact us</a></li>
-                <li><a href="career.html">Career</a></li>
+                <li><a href="career.php">Career</a></li>
               </ul>
             </div>
           </div>

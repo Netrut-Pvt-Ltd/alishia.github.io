@@ -1,3 +1,15 @@
+<?php 
+require('db.php');
+$query  = "SELECT * from requirements";
+$result = mysqli_query($db,$query);
+     
+$data=[];
+while($response=mysqli_fetch_assoc($result)){
+    $data[]=$response;
+    
+}
+
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
@@ -181,7 +193,7 @@
               </li>
 
               <li class="dropdown cool-link_3">
-                <a href="career.html">Career</a>
+                <a href="career.php">Career</a>
               </li>
               <li class="cool-link_3">
                 <a href="contact.php">Contact Us</a>
@@ -224,6 +236,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-6 col-xs-12">
+            <?php foreach ($data as$value) {
+            # code...
+           ?>
             <div class="col-md-12 about_box">
               <div class="heading">
                 <div class="heading_border bg_red"></div>
@@ -247,15 +262,15 @@
               </div>
 
               <h4 style="font-size: 18px" class="p-t-20">
-                Position: <span class="color_red">National Sales Head</span>
+                Position: <span class="color_red"><?= $value['position']; ?></span>
               </h4>
               <h4 class="p-t-10">
-                Product: <span>Education Loan (Domestic & International)</span>
+                Product: <span><?= $value['product']; ?></span>
               </h4>
               <h4 class="p-t-10">
                 Location:
                 <span>
-                  Mumbai
+                  <?= $value['location']; ?>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -269,54 +284,29 @@
                 </span>
               </h4>
               <h4 class="p-t-10">
-                Industry: <span class="color_red">Banking/ NBFC</span>
+                Industry: <span class="color_red"><?= $value['industry']; ?></span>
               </h4>
 
               <p class="p_17 p-t-10">
-                A large banking & financial services organization is looking for
-                National Sales Head to lead the function. Drive business ...
+               <?= $value['des']; ?>
               </p>
 
-              <div class="collapse" id="collapseExample">
+              <div class="collapse" id="<?= $value['id']; ?>">
                 <p class="p_17 p-t-10 p-t-10">
-                  - Relationship management with institutes, third party service
-                  providers, Generating business from different channels like
-                  DSA, Bank Branches and Digital
+                  <?= $value['des']; ?>
                 </p>
-                <p class="p_17 p-t-10">
-                  - Drive cross-sell of products like insurance, cards etc..
-                </p>
-                <p class="p_17 p-t-10">
-                  Maintain team productivity through trainings and performance
-                  improvement
-                </p>
-                <p class="p_17 p-t-10">Train partners on product & policy</p>
-                <p class="p_17 p-t-10">
-                  Business trend analysis and exploring new avenues to generate
-                  more business
-                </p>
-                <p class="p_17 p-t-10">Driving contests and R&R</p>
-                <p class="p_17 p-t-10">
-                  An ideal candidate should have retail asset (Loans) experience
-                  of at least 15-20 years in a banking/ Financial services
-                  industry. years out of which 5-7 years in a lead role.
-                </p>
-
-                <p class="p_17 p-t-15">
-                  Profiles/ references may pls be sent to
-                  <span class="color_red">Vijay.mehra@alishia.co.in</span>
-                  Or WhatsApp: +91 99538 91003
-                </p>
+                
               </div>
               <a
                 style="font-size: 15px; font-weight: 500"
-                href="#collapseExample"
+                href="#<?= $value['id']; ?>"
                 data-toggle="collapse"
                 class="color_red"
                 >Read More</a
               >
             </div>
-            <div class="col-md-12 about_box">
+            <?php } ?>
+            <!-- <div class="col-md-12 about_box">
               <div class="heading">
                 <div class="heading_border bg_red"></div>
 
@@ -500,7 +490,7 @@
                 class="color_red"
                 >Read More</a
               >
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
